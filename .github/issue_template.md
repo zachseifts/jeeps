@@ -1,5 +1,3 @@
-### Topic
-
 Describe the problem.
 
 ### Parts needed
