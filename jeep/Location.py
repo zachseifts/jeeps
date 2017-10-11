@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 '''
-# Where am I?
+A Location class.
 
 This script keeps track of where the Jeep is.
 
