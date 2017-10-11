@@ -16,6 +16,6 @@ class Location(object):
         self.latitude = kwargs.get('latitude', None)
 
 
-if __name == '__main__':
-    location = Location();
-  
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
