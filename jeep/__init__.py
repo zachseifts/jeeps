@@ -1,1 +1,1 @@
-from whereami import Location
+from location import Location
