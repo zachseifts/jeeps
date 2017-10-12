@@ -15,7 +15,3 @@ class Location(object):
         self.longitude = kwargs.get('longitude', None)
         self.latitude = kwargs.get('latitude', None)
 
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
