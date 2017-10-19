@@ -1,2 +1,2 @@
 from location import Location
-from startup import Startup
+from startup import StartUp
