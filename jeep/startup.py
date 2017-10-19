@@ -6,4 +6,4 @@ class StartUp(object):
     '''
     
     def __init__(self):
-        self.running = true
+        self.running = True
