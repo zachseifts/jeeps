@@ -5,4 +5,4 @@ python:
 script:
   - "python ./tests.py"
 after_script:
-  - "tail /var/log/syslog"
+  - "sudo tail /var/log/syslog"
