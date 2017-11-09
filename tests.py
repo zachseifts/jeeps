@@ -6,7 +6,7 @@ from jeep import StartUp
 class TestLocationClass(unittest.TestCase):
     ''' A test class for testing the Location.
     '''
-    
+
     def test_init(self):
         ''' Test the init process for setting up a new Location.
         '''
@@ -15,7 +15,7 @@ class TestLocationClass(unittest.TestCase):
         location = Location(latitude=lat, longitude=lon)
         self.assertEquals(location.latitude, lat)
         self.assertEquals(location.longitude, lon)
-        
+
     def test_startup(self):
         ''' Test the Startup class.
         '''
