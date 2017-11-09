@@ -10,9 +10,11 @@ class TestLocationClass(unittest.TestCase):
     def test_init(self):
         ''' Test the init process for setting up a new Location.
         '''
-        location = Location(longitude=123.1234, latitude=123.1234)
-        self.assertEquals(location.longitude, 123.1234)
-        self.assertEquals(location.latitude, 123.1234)
+        lat = 12.1234
+        lon = 12.1234
+        location = Location(latitude=lat, longitude=lon)
+        self.assertEquals(location.latitude, lat)
+        self.assertEquals(location.longitude, lon)
         
     def test_startup(self):
         ''' Test the Startup class.
