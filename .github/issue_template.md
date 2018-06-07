@@ -1,8 +1,9 @@
 Describe the problem.
 
-### Parts needed
+### TODO
+
+- [ ] Item 1
+
+### Parts
 
  * [Part name](link)
- * [Part name](link)
-
-### Other info
