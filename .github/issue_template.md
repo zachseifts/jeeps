@@ -1,9 +1,11 @@
 Describe the problem.
 
-### TODO
+## TODO
 
 - [ ] Item 1
+- [ ] Item 2
 
-### Parts
+## Parts
 
+ * [Part name](link)
  * [Part name](link)
