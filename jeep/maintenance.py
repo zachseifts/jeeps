@@ -1,8 +1,6 @@
 '''A class for scheduling maintenance on the jeep.
 '''
 
-from datetime import datetime
-
 from github import Github
 
 class Maintenance:
