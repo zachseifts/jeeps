@@ -2,6 +2,7 @@ import unittest
 
 from jeep.location import Location
 from jeep.startup import StartUp
+from jeep.maintenance import GreaseJob
 
 class TestLocationClass(unittest.TestCase):
     ''' A test class for testing the Location.
@@ -21,6 +22,20 @@ class TestLocationClass(unittest.TestCase):
         '''
         startup = StartUp()
         self.assertTrue(startup.running)
+
+
+class TestMaintenance(unittest.TestCase):
+
+    def test_greasejob(self):
+        ''' Tests the greasejob class
+        '''
+        g = GreaseJob()
+        self.assertEqual(g.label, 'Maintenance')
+        self.assertEqual(g.assignee, 'zachseifts')
+        self.assertEqual(g.repo, 'zachseifts/jeeps')
+        self.assertEqual(g.title, 'Monthly: Grease job and inspection')
+        self.assertEqual(g.body, 'It is time to check on the jeep.')
+        self.assertTrue(g.has_ran)
 
 
 if __name__ == '__main__':
