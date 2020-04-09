@@ -3,20 +3,24 @@
 
 from datetime import datetime
 
+from github import Github
+
 class Maintenance:
     ''' A base maintenance class.
     '''
 
     def __init__(self):
-        self.has_ran = False
-        self.label = u'Maintenance'
         self.assignee = 'zachseifts'
-        self.repo = 'zachseifts/jeeps'
+        self.repo_name = 'zachseifts/jeeps'
 
     def create(self):
         ''' This function creates an issue in the repo
         '''
-        self.has_ran = True
+        self.repo.create_issue(
+            title=self.title,
+            body=self.body,
+            labels=[self.label],
+            assignee=self.assignee)
 
 
 class GreaseJob(Maintenance):
@@ -35,5 +39,11 @@ class GreaseJob(Maintenance):
         self.title = u'Monthly: Grease job and inspection'
         self.body = u'It is time to check on the jeep.'
         super().__init__()
-        self.create()
+
+    def run(self):
+        if self.account_token:
+            self.github = Github(self.account_token)
+            self.repo = self.github.get_repo(self.repo_name)
+            self.label = self.repo.get_label('Maintenance')
+            self.create()
 
