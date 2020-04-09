@@ -1,4 +1,15 @@
-# A repository to keep track of my jeep projects
+# 1961 CJ-3B
+
+## Installation
+
+Start with a virtualenv:
+
+    $ python3 -m venv env
+    $ source ./env/bin/activate
+
+Then install things
+
+    (env) $ pip install -r requirements.txt
 
 [![Build Status](https://travis-ci.org/zachseifts/jeeps.svg?branch=travis-config)](https://travis-ci.org/zachseifts/jeeps)
 
