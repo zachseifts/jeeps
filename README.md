@@ -2,14 +2,11 @@
 
 ## Installation
 
-Start with a virtualenv:
+Install with virtualenv.
 
     $ python3 -m venv env
     $ source ./env/bin/activate
-
-Then install things
-
-    (env) $ pip install -r requirements.txt
+    (env) $ pip install .
 
 [![Build Status](https://travis-ci.org/zachseifts/jeeps.svg?branch=travis-config)](https://travis-ci.org/zachseifts/jeeps)
 
