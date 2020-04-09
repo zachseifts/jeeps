@@ -3,7 +3,7 @@
 
 from syslog import syslog
 
-class StartUp(object):
+class StartUp:
     ''' The StartUp object is initiated once the jeep boots.
     '''
     

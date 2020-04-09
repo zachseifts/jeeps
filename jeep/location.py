@@ -2,11 +2,10 @@
 A Location class.
 
 This script keeps track of where the Jeep is.
-
 '''
 
-class Location(object):
-    ''' A location.
+class Location:
+    ''' A base location class.
     '''
     
     def __init__(self, **kwargs):

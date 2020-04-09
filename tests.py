@@ -1,7 +1,7 @@
 import unittest
 
-from jeep import Location
-from jeep import StartUp
+from jeep.location import Location
+from jeep.startup import StartUp
 
 class TestLocationClass(unittest.TestCase):
     ''' A test class for testing the Location.
@@ -13,8 +13,8 @@ class TestLocationClass(unittest.TestCase):
         lat = 12.1234
         lon = 12.1234
         location = Location(latitude=lat, longitude=lon)
-        self.assertEquals(location.latitude, lat)
-        self.assertEquals(location.longitude, lon)
+        self.assertEqual(location.latitude, lat)
+        self.assertEqual(location.longitude, lon)
 
     def test_startup(self):
         ''' Test the Startup class.
